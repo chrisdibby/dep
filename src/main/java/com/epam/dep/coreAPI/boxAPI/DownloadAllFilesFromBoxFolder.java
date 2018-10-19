@@ -8,7 +8,7 @@ public class DownloadAllFilesFromBoxFolder {
 
     public static void downloadAllFilesFromFolder(BoxFolder folder) throws Exception {
         final String currentPath = new File("").getAbsolutePath();
-        Reader configFile = new FileReader("config.json");
+        Reader configFile = new FileReader("../configs/config.json");
         BoxConfig boxConfig = BoxConfig.readFrom(configFile);
         BoxDeveloperEditionAPIConnection boxClient = BoxDeveloperEditionAPIConnection.getAppEnterpriseConnection(boxConfig);
         String folderId = "";
@@ -29,6 +29,7 @@ public class DownloadAllFilesFromBoxFolder {
             }
             localFolderPath.delete();
             rewriteFolder = localFolderPath.mkdir();
+
         }
 
         for (BoxItem.Info itemInfo : folder) {

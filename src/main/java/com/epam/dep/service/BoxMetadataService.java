@@ -3,8 +3,6 @@ package com.epam.dep.service;
 import java.io.IOException;
 import java.util.List;
 
-import com.epam.dep.entity.BoxMetadata;
-
 public interface BoxMetadataService {
 	
 	BoxMetadata getBoxMetadataById (int id);

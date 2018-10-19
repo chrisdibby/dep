@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.epam.dep.repo.BoxMetadataRepo;
-import com.epam.dep.entity.BoxMetadata;
 
 @Service
 public class BoxMetadataServiceImpl implements BoxMetadataService {

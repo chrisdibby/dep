@@ -1,6 +1,5 @@
 package com.epam.dep.service;
 
-import com.epam.dep.entity.Agency;
 import com.epam.dep.repo.AgencyRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 
